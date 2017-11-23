@@ -21,6 +21,7 @@ import javax.persistence.TemporalType;
 public class HistorialCargo implements java.io.Serializable {
 
 	@Id
+	@GeneratedValue
 	@Column(name = "id_historial", unique = true, nullable = false)
 	private int id_historial;
 	

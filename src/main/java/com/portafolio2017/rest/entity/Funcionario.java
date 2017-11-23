@@ -48,6 +48,9 @@ public class Funcionario implements java.io.Serializable {
 	
 	@Column(name = "correo_funcionario", nullable = false, length = 20)
 	private String correoFuncionario;
+	
+	@Column(name = "dias_permisos_disponibles", nullable = false, length = 2)
+	private int permisosDisponibles;
 
 	public Funcionario() {
 	}
@@ -56,9 +59,11 @@ public class Funcionario implements java.io.Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
+
+
 	public Funcionario(String rutFuncionario, Departamento departamento, Cargo cargo, String primerNombre,
 			String segundoNombre, String primerApellido, String segundoApellido, long telefonoFunionario,
-			String sexoFunionario, String correoFuncionario) {
+			String sexoFunionario, String correoFuncionario, int permisosDisponibles) {
 		super();
 		this.rutFuncionario = rutFuncionario;
 		this.departamento = departamento;
@@ -70,6 +75,7 @@ public class Funcionario implements java.io.Serializable {
 		this.telefonoFunionario = telefonoFunionario;
 		this.sexoFunionario = sexoFunionario;
 		this.correoFuncionario = correoFuncionario;
+		this.permisosDisponibles = permisosDisponibles;
 	}
 
 	public String getRutFuncionario() {
@@ -151,6 +157,16 @@ public class Funcionario implements java.io.Serializable {
 	public void setCorreoFuncionario(String correoFuncionario) {
 		this.correoFuncionario = correoFuncionario;
 	}
+
+	public int getPermisosDisponibles() {
+		return permisosDisponibles;
+	}
+
+	public void setPermisosDisponibles(int permisosDisponibles) {
+		this.permisosDisponibles = permisosDisponibles;
+	}
+	
+	
 
 
 }
