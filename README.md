@@ -15,9 +15,12 @@ Requisitos
 - Java 8
 - Apache Tomcat 8 o motor de servidores web similares que manejen poryectos JavaEE (proyecto.war)
 - Empaquetar en proyecto en un archivo WAR, luego insertar el proyecto en la carpeta correspondiente de tu servidor JavaEE.
+
 Versión
+
 Encargados del proyecto
-    - Matías Sotomayor.
+- Matías Sotomayor.
+    
 Uso
 Documentación
 Roadmap
