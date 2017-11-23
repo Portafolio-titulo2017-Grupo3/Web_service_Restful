@@ -22,6 +22,9 @@ Encargados del proyecto
 - Matías Sotomayor.
     
 Uso
+
 Documentación
+
 Roadmap
+
 Licencia
