@@ -2,7 +2,6 @@ package com.portafolio2017.rest.model;
 
 public class FuncionarioInfoModel {
 
-
 	private String rutFuncionario;
 	private String primerNombre;
 	private String segundoNombre;
@@ -11,21 +10,23 @@ public class FuncionarioInfoModel {
 	private long telefonoFunionario;
 	private String sexoFunionario;
 	private String correoFuncionario;
-	
+
 	private int idCargo;
 	private String nombreCargo;
 	private long salario;
-	
+
 	private int idDepto;
 	private String nombreDepto;
-	
+
+	private int permisosDisponibles;
+
 	public FuncionarioInfoModel() {
 		super();
 	}
 
 	public FuncionarioInfoModel(String rutFuncionario, String primerNombre, String segundoNombre, String primerApellido,
 			String segundoApellido, long telefonoFunionario, String sexoFunionario, String correoFuncionario,
-			int idCargo, String nombreCargo, long salario, int idDepto, String nombreDepto) {
+			int idCargo, String nombreCargo, long salario, int idDepto, String nombreDepto, int permisosDisponibles) {
 		super();
 		this.rutFuncionario = rutFuncionario;
 		this.primerNombre = primerNombre;
@@ -40,6 +41,7 @@ public class FuncionarioInfoModel {
 		this.salario = salario;
 		this.idDepto = idDepto;
 		this.nombreDepto = nombreDepto;
+		this.permisosDisponibles = permisosDisponibles;
 	}
 
 	public String getRutFuncionario() {
@@ -145,14 +147,23 @@ public class FuncionarioInfoModel {
 	public void setNombreDepto(String nombreDepto) {
 		this.nombreDepto = nombreDepto;
 	}
-	
+
+	public int getPermisosDisponibles() {
+		return permisosDisponibles;
+	}
+
+	public void setPermisosDisponibles(int permisosDisponibles) {
+		this.permisosDisponibles = permisosDisponibles;
+	}
+
 	@Override
 	public String toString() {
 		return "FuncionarioInfoModel [rutFuncionario=" + rutFuncionario + ", primerNombre=" + primerNombre
 				+ ", segundoNombre=" + segundoNombre + ", primerApellido=" + primerApellido + ", segundoApellido="
 				+ segundoApellido + ", telefonoFunionario=" + telefonoFunionario + ", sexoFunionario=" + sexoFunionario
 				+ ", correoFuncionario=" + correoFuncionario + ", idCargo=" + idCargo + ", nombreCargo=" + nombreCargo
-				+ ", salario=" + salario + ", idDepto=" + idDepto + ", nombreDepto=" + nombreDepto + "]";
+				+ ", salario=" + salario + ", idDepto=" + idDepto + ", nombreDepto=" + nombreDepto
+				+ ", permisosDisponibles=" + permisosDisponibles + "]";
 	}
-	
+
 }

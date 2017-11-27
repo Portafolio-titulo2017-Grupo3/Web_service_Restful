@@ -1,7 +1,7 @@
 #Puerto del servidor
 server:
-  port: 8081
-  contextPath: /rest
+  port: 8082
+  contextPath: /api-rest
   error:
     whitelabel:
       enabled: false

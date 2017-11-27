@@ -22,6 +22,7 @@ public class FuncionarioConverter {
 		funcionario.setSegundoApellido(funcionarioModel.getSegundoApellido());
 		funcionario.setTelefonoFunionario(funcionarioModel.getTelefonoFunionario());
 		funcionario.setSexoFunionario(funcionarioModel.getSexoFunionario());
+		funcionario.setPermisosDisponibles(funcionarioModel.getPermisosDisponibles());
 
 		return funcionario;
 		
@@ -46,6 +47,8 @@ public class FuncionarioConverter {
 		
 		funcionarioModel.setIdDepto(funcionario.getDepartamento().getIdDepto());
 		funcionarioModel.setNombreDepto(funcionario.getDepartamento().getNombreDepto());
+		
+		funcionarioModel.setPermisosDisponibles(funcionario.getPermisosDisponibles());
 
 		return funcionarioModel;
 		
