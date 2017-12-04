@@ -31,11 +31,10 @@ public class RestController {
 	
 	
 	
-	@GetMapping("/funcionario/{rut}&{dias}")
-	public ResponseEntity<FuncionarioInfoModel> checkRest2(@PathVariable("rut") String rut,
-														  @PathVariable("dias") String dias){
+	@GetMapping("/funcionario/{rut}")
+	public ResponseEntity<FuncionarioInfoModel> checkRest2(@PathVariable("rut") String rut){
 		FuncionarioInfoModel fm = new FuncionarioInfoModel();
-		if(rut.isEmpty() || dias.isEmpty()) {
+		if(rut.isEmpty()) {
 			fm=null;
 		}else {
 			fm = funcionarioService.findFuncionarioModelByRut(rut);
