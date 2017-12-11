@@ -9,9 +9,9 @@ server:
 #Directorio del banner de Springboot tras arrancar el servidor
 
 spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/mydb?useSSL=false  # JDBC url of the database.
-    username: maty                                              # Login user of the database.
+  datasource: 
+    url: jdbc:mysql://myorion.ct8hgadd3koi.sa-east-1.rds.amazonaws.com:3306/orionFunDB?useSSL=false  # JDBC url of the database. jdbc:mysql://localhost:3306/mydb?useSSL=false
+    username: crisOrion                                             # Login user of the database.           maty
     password: 123456123                                         # Login password of the database.
   jpa:
     show-sql: true                                              # Enable logging of SQL statements.
