@@ -22,6 +22,7 @@ Encargados del proyecto
 - Matías Sotomayor.
     
 Uso
+- Permite gestionar peticiones Get para entregar la información del funcionario, principalmente la cantidad de días disponibles.
 
 Documentación
 
