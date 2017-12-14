@@ -28,7 +28,7 @@ Requisitos
 	   - Comprimir el proyecto en un WAR con el comando 'mvn clean install/mvn package', luego insertar el proyecto en la carpeta 	 	      correspondiente de tu servidor Web JavaEE.
 	
 
-Versión
+Versión: v1.0
 
 Encargados del proyecto
 - Matías Sotomayor.
