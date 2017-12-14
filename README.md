@@ -4,14 +4,23 @@ Aplicación Orientada a servicios (webservice API Restful) que servira para alim
 Frontend:
   Json
 Backend:
+
 - Spring MVC v_4.3
+
 - Spring Boots 1.5.8
+
 - Hibernate 5
+
 Nombre proyecto:
+
 Descripcion del proyecto:
 
-Instalación
+**********************
+
+Instalación:
+
 Requisitos
+
 	```
 	   - Java 8
 	   - Maven 3.5
